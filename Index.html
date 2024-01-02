@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Index.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="image/logo.png" class="logo"></a>
+
+            <div class="add-cart">
+                <a href="cart.html"><button type="button" class="btn btn-success my-2 my-sm-0 js-cart-popup-btn" data-toggle="modal" data-target="#staticBackdrop">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">0</span>
+                </button></a>
+            </div>
+     
+        <div class="add-wishlist wishlist-badge-btn ">
+                <a href="wishlist.html"><button type="button" class="btn btn-success my-2 my-sm-0 js-wishlist-popup-btn" id="wishlist-icon" data-toggle="modal" data-target="#staticBackdropwishlist" onclick="displaywishlistbtn()">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge">0</span>
+                </button></a>
+        </div>
+
+    </section>
+
+    <section id="hero">
+        <h4 class="head1">Trade-in-Offer</h4>
+        <h2 class="head2">Super value deals</h2>
+        <h1 class="head3">On all products</h1>
+        <p class="para">Save more with coupons & up to 70% off!</p>
+        <button><a href="#product1">Shop Now</a></button>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="image/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="image/f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="image/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="image/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="image/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="image/f6.png" alt="">
+            <h6>F24/7 Support</h6>
+        </div>
+
+    </section>
+
+    <section id="product1" class="section-p1">
+
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+
+        <div class="tabs_item">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 main-card js-product-cart" data-product-id="1">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/n2.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Tunic</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 2599 </h4>
+                                <span>(4.4)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                        
+
+                            <div class="featured-content-list">
+                                <div class="featured-content-list">
+                                    <button type="button" data-name="Tunic" data-price="2599" data-image="image/n2.jpg" class="default-btn border-radius-5">Add to cart</button>
+                                </div>
+
+                            </div>
+
+                            <button type="button" dataa-name="Tunic" dataa-price="2599" dataa-image="image/n2.jpg" class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 main-card js-product-cart" data-product-id="2">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f2.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Culotte</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 2699 </h4>
+                                <span>(4.4)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Culotte" data-price="2699" data-image="image/f2.jpg" class="default-btn border-radius-5">Add to cart</button>
+                            </div>
+                            <button type="button" dataa-name="Culotte" dataa-price="2699" dataa-image="image/f2.jpg" class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 main-card js-product-cart" data-product-id="3">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f3.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Goa</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 1899 </h4>
+                                <span>(4.4)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Goa" data-price="1899" data-image="image/f3.jpg" class="default-btn border-radius-5">Add to cart</button>
+                            </div>
+
+                            <button type="button" dataa-name="Goa" dataa-price="1899" dataa-image="image/f3.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                                <div class="active">
+
+                                </div>
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 main-card js-product-cart" data-product-id="4">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f4.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Wrap</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 2599 </h4>
+                                <span>(4.4)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Wrap" data-price="2999" data-image="image/f4.jpg"
+                                    class="default-btn border-radius-5">Add to cart </button>
+                            </div>
+
+                            <button type="button" dataa-name="Wrap" dataa-price="2999" dataa-image="image/f4.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                                <div class="active">
+
+                                </div>
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 main-card js-product-cart" data-product-id="5">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f5.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Tunic</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 1499 </h4>
+                                <span>(4.4)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Tunic" data-price="1499" data-image="image/f5.jpg"
+                                    class="default-btn border-radius-5">Add to cart </button>
+                            </div>
+
+                            <button type="button" dataa-name="Tunic" dataa-price="1499" dataa-image="image/f5.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                                <div class="active">
+
+                                </div>
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 main-card js-product-cart" data-product-id="6">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f6.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Casual Set</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 3499 </h4>
+                                <span>(4.4)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Casual Set" data-price="3499" data-image="image/f6.jpg"
+                                    class="default-btn border-radius-5">Add to cart</button>
+                            </div>
+
+                            <button type="button" dataa-name="Casual Set" dataa-price="3499" dataa-image="image/f6.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                                <div class="active">
+
+                                </div>
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 main-card js-product-cart" data-product-id="7">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f7.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Pant</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 2599 </h4>
+                                <span>(4.4)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Pant" data-price="2599" data-image="image/f7.jpg"
+                                    class="default-btn border-radius-5">Add to cart </button>
+                            </div>
+
+                            <button type="button" dataa-name="Pant" dataa-price="2599" dataa-image="image/f7.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                                <div class="active">
+
+                                </div>
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 main-card js-product-cart" data-product-id="8">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/n2.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Top</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 1399 </h4>
+                                <span>(4.4)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Top" data-price="1399" data-image="image/n2.jpg"
+                                    class="default-btn border-radius-5">Add to cart </button>
+                            </div>
+
+                            <button type="button" dataa-name="Top" dataa-price="2599" dataa-image="image/n2.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                    
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+<section>
+
+    <div class="add-data-product">
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% off</span> - All t-Shirts & Accessories</h2>
+        <button class="normal">Explore More</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection New Modern Design</p>
+
+        <div class="tabs_item">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 main-card">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/n1.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Casual</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 2999 </h4>
+                                <span>(4.0)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Casual" data-price="2999" data-image="image/f6.jpg"
+                                    class="default-btn border-radius-5">Add to cart </button>
+                            </div>
+                            <button type="button" dataa-name="Casual" dataa-price="2999" dataa-image="image/f6.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                            
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 main-card">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f2.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Goa</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 1759 </h4>
+                                <span>(4.0)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Goa" data-price="1759" data-image="image/f2.jpg"
+                                    class="default-btn border-radius-5">Add to cart </button>
+                            </div>
+                            <button type="button" dataa-name="Goa" dataa-price="1759" dataa-image="image/f2.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                        
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 main-card">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f3.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Sleeve</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 1499 </h4>
+                                <span>(4.0)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Sleeve" data-price="1499" data-image="image/f3.jpg"
+                                    class="default-btn border-radius-5">Add to cart </button>
+                            </div>
+                            <button type="button" dataa-name="Sleeve" dataa-price="1499" dataa-image="image/f3.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                            
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 main-card">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f6.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Wrap</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 3499 </h4>
+                                <span>(4.0)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Wrap" data-price="3499" data-image="image/f4.jpg"
+                                    class="default-btn border-radius-5">Add to cart</button>
+                            </div>
+                            <button type="button" dataa-name="Wrap" dataa-price="3499" dataa-image="image/f4.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                            
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 main-card">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f5.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>shirts</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 1699 </h4>
+                                <span>(4.0)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="shirts" data-price="1699" data-image="image/f5.jpg"
+                                    class="default-btn border-radius-5">Add to cart</button>
+                            </div>
+                            <button type="button" dataa-name="shirts" dataa-price="1699" dataa-image="image/f5.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                            
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 main-card">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f6.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Casual</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 2999 </h4>
+                                <span>(4.0)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Casual" data-price="2999" data-image="image/f6.jpg"
+                                    class="default-btn border-radius-5">Add to cart </button>
+                            </div>
+                            <button type="button" dataa-name="Casual" dataa-price="2999" dataa-image="image/f6.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                                
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 main-card">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f7.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Babydoll</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 1199 </h4>
+                                <span>(4.0)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Babydoll" data-price="1199" data-image="image/f7.jpg"
+                                    class="default-btn border-radius-5">Add to cart</button>
+                            </div>
+                            <button type="button" dataa-name="Babydoll" dataa-price="1199" dataa-image="image/f7.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                            
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 main-card">
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img class="feature-img" src="image/f8.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Top</h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>₹ 1399 </h4>
+                                <span>(4.0)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Top" data-price="1399" data-image="image/f8.jpg"
+                                    class="default-btn border-radius-5">Add to cart </button>
+                            </div>
+                            <button type="button" dataa-name="Top" dataa-price="1399" dataa-image="image/f8.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                            
+
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Crazy deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white">Learn More</button>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h4>Spring/Summer</h4>
+            <h2>Upcoming Season</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white">Collection</button>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign up for Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="image/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone: </strong> +01 2222 365 /(+91) 012 3456789</p>
+            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+
+            <h4>About</h4>
+            <div class="footer-content">
+                <a href="#">About us</a>
+                <a href="#">Delivering Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <div class="footer-content">
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="image/app.jpg" alt="">
+                <img src="image/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateway</p>
+            <img src="image/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>@ 2021, Tech2 etc - Ecommerce Template</p>
+        </div>
+    </footer>
+
+    <div  class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger clear-">Clear All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdropwishlist" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropwishlistLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropwishlistLabel">Wishlist Cart</h5>
+                    <button type="button" class="close btn btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-wishlist table">
+
+                    </table>
+                    <!-- <div class="grand-total">Total price: ₹<span class="total-wishlist"></span></div>
+                </div> -->
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="Index.js"></script>
+        <script src="wishlist.js"></script>
+        <script src="cartPage.js"></script>
+        <script src="form.js"></script>
+
+
+</body>
+</html>
