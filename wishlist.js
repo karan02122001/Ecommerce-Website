@@ -243,9 +243,9 @@ document.querySelectorAll('.js-wishlist-btn').forEach(function (element) {
   });
 });
 
-document.querySelector('.wishlist-badge-btn').addEventListener('click', (event) => {
-  window.location.href = 'wishlist.html';
-});
+// document.querySelector('.wishlist-badge-btn').addEventListener('contextmenu', (event) => {
+//   window.location.href = 'wishlist.html';
+// });
 
 function displaywishlistbtn() {
   displaywishlist();

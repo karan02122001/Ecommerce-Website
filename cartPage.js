@@ -102,5 +102,3 @@ document.addEventListener('click', function (event) {
 // Calculate and display the initial total price
 updateTotalPrice();
 
-
-

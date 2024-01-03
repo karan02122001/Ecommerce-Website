@@ -214,3 +214,4 @@ function cartPopupActions() {
 // Assuming you call the displayCart function elsewhere in your code
 displayCart();
 
+
