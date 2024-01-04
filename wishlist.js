@@ -184,8 +184,8 @@ function displaywishlist() {
   let itemCount = JSON.parse(localStorage.getItem('shoppingwishlist')).length;
   // Update the wishlist count and display the modal
   document.querySelector('.js-wishlist-popup-btn .badge').innerHTML = itemCount;
-  var myModal = new bootstrap.Modal(document.getElementById('staticBackdropwishlist'));
-  myModal.show();
+  // var myModal = new bootstrap.Modal(document.getElementById('staticBackdropwishlist'));
+  // myModal.show();
 }
 
 
@@ -243,9 +243,9 @@ document.querySelectorAll('.js-wishlist-btn').forEach(function (element) {
   });
 });
 
-// document.querySelector('.wishlist-badge-btn').addEventListener('contextmenu', (event) => {
-//   window.location.href = 'wishlist.html';
-// });
+document.querySelector('.wishlist-badge-btn').addEventListener('click', (event) => {
+  event.preventDefault();
+});
 
 function displaywishlistbtn() {
   displaywishlist();

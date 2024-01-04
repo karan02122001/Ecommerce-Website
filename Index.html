@@ -16,18 +16,23 @@
     <section id="header">
         <a href="#"><img src="image/logo.png" class="logo"></a>
 
-            <div class="add-cart cart-badge-btn" id="cartLink">
-                <button type="button" class="btn btn-success my-2 my-sm-0 js-cart-popup-btn" data-toggle="modal" data-target="#staticBackdrop">
+        <div class="add-cart cart-badge-btn">
+            <a href="cart.html">
+                <button type="button" class="btn btn-success my-2 my-sm-0 js-cart-popup-btn" data-toggle="modal"
+                    data-target="#staticBackdrop">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="badge">0</span>
                 </button>
-            </div>
-     
+            </a>
+        </div>
+
         <div class="add-wishlist wishlist-badge-btn ">
-                <button type="button" class="btn btn-success my-2 my-sm-0 js-wishlist-popup-btn" id="wishlist-icon" data-toggle="modal" data-target="#staticBackdropwishlist" onclick="displaywishlistbtn()">
+            <a href="wishlist.html">
+                <button type="button" class="btn btn-success my-2 my-sm-0 js-wishlist-popup-btn" id="wishlist-icon"
+                    data-toggle="modal" data-target="#staticBackdropwishlist">
                     <i class="fa-regular fa-heart"></i>
                     <span class="badge">0</span>
-                </button>
+                </button></a>
         </div>
 
     </section>
@@ -80,6 +85,7 @@
 
         <div class="tabs_item">
             <div class="row justify-content-center">
+
                 <div class="col-lg-3 col-md-6 main-card js-product-cart" data-product-id="1">
                     <div class="featured-item">
                         <div class="featured-item-img">
@@ -95,22 +101,28 @@
                                 <span>(4.4)<i class="fa fa-star"></i></span>
                             </div>
                             <hr>
-                        
 
                             <div class="featured-content-list">
                                 <div class="featured-content-list">
-                                    <button type="button" data-name="Tunic" data-price="2599" data-image="image/n2.jpg" class="default-btn border-radius-5">Add to cart</button>
+                                    <button type="button" data-name="Tunic" data-price="2599" data-image="image/n2.jpg"
+                                        class="default-btn border-radius-5"
+                                        onclick="redirectToProductPage(1, 'Tunic', 2599, 'image/n2.jpg')">Add to
+                                        cart</button>
                                 </div>
 
                             </div>
 
-                            <button type="button" dataa-name="Tunic" dataa-price="2599" dataa-image="image/n2.jpg" class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                            <button type="button" dataa-name="Tunic" dataa-price="2599" dataa-image="image/n2.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
                             </button>
                         </div>
                     </div>
                 </div>
+
+
+
                 <div class="col-lg-3 col-md-6 main-card js-product-cart" data-product-id="2">
                     <div class="featured-item">
                         <div class="featured-item-img">
@@ -127,9 +139,13 @@
                             </div>
                             <hr>
                             <div class="featured-content-list">
-                                <button type="button" data-name="Culotte" data-price="2699" data-image="image/f2.jpg" class="default-btn border-radius-5">Add to cart</button>
+                                <button type="button" data-name="Culotte" data-price="2699" data-image="image/f2.jpg"
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Culotte', 2699, 'image/f2.jpg')">Add to
+                                    cart</button>
                             </div>
-                            <button type="button" dataa-name="Culotte" dataa-price="2699" dataa-image="image/f2.jpg" class="js-wishlist-btn wishlist-btn btn border-radius-5">
+                            <button type="button" dataa-name="Culotte" dataa-price="2699" dataa-image="image/f2.jpg"
+                                class="js-wishlist-btn wishlist-btn btn border-radius-5">
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
                             </button>
@@ -153,7 +169,10 @@
                             </div>
                             <hr>
                             <div class="featured-content-list">
-                                <button type="button" data-name="Goa" data-price="1899" data-image="image/f3.jpg" class="default-btn border-radius-5">Add to cart</button>
+                                <button type="button" data-name="Goa" data-price="1899" data-image="image/f3.jpg"
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Goa', 1899, 'image/f3.jpg')">Add to
+                                    cart</button>
                             </div>
 
                             <button type="button" dataa-name="Goa" dataa-price="1899" dataa-image="image/f3.jpg"
@@ -187,7 +206,9 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Wrap" data-price="2999" data-image="image/f4.jpg"
-                                    class="default-btn border-radius-5">Add to cart </button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1,'Wrap', 2599, 'image/f4.jpg')">Add to cart
+                                </button>
                             </div>
 
                             <button type="button" dataa-name="Wrap" dataa-price="2999" dataa-image="image/f4.jpg"
@@ -221,7 +242,9 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Tunic" data-price="1499" data-image="image/f5.jpg"
-                                    class="default-btn border-radius-5">Add to cart </button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1,'Tunic', 1499, 'image/f5.jpg')">Add to cart
+                                </button>
                             </div>
 
                             <button type="button" dataa-name="Tunic" dataa-price="1499" dataa-image="image/f5.jpg"
@@ -255,7 +278,9 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Casual Set" data-price="3499" data-image="image/f6.jpg"
-                                    class="default-btn border-radius-5">Add to cart</button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1,'Casual Set', 3499, 'image/f6.jpg')">Add to
+                                    cart</button>
                             </div>
 
                             <button type="button" dataa-name="Casual Set" dataa-price="3499" dataa-image="image/f6.jpg"
@@ -290,7 +315,9 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Pant" data-price="2599" data-image="image/f7.jpg"
-                                    class="default-btn border-radius-5">Add to cart </button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Pant', 2599, 'image/f7.jpg')">Add to cart
+                                </button>
                             </div>
 
                             <button type="button" dataa-name="Pant" dataa-price="2599" dataa-image="image/f7.jpg"
@@ -325,12 +352,14 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Top" data-price="1399" data-image="image/n2.jpg"
-                                    class="default-btn border-radius-5">Add to cart </button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Top', 1399, 'image/n2.jpg')">Add to cart
+                                </button>
                             </div>
 
                             <button type="button" dataa-name="Top" dataa-price="2599" dataa-image="image/n2.jpg"
                                 class="js-wishlist-btn wishlist-btn btn border-radius-5">
-                    
+
 
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
@@ -342,6 +371,7 @@
                 </div>
             </div>
         </div>
+        </div>
 
     </section>
 
@@ -351,12 +381,12 @@
 
 
 
-<section>
+    <section>
 
-    <div class="add-data-product">
+        <div class="add-data-product">
 
-    </div>
-</section>
+        </div>
+    </section>
 
 
 
@@ -402,11 +432,13 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Casual" data-price="2999" data-image="image/f6.jpg"
-                                    class="default-btn border-radius-5">Add to cart </button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Casual', 2999, 'image/n1.jpg')">Add to cart
+                                </button>
                             </div>
                             <button type="button" dataa-name="Casual" dataa-price="2999" dataa-image="image/f6.jpg"
                                 class="js-wishlist-btn wishlist-btn btn border-radius-5">
-                            
+
 
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
@@ -432,11 +464,13 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Goa" data-price="1759" data-image="image/f2.jpg"
-                                    class="default-btn border-radius-5">Add to cart </button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Goa', 1759, 'image/f2.jpg')">Add to cart
+                                </button>
                             </div>
                             <button type="button" dataa-name="Goa" dataa-price="1759" dataa-image="image/f2.jpg"
                                 class="js-wishlist-btn wishlist-btn btn border-radius-5">
-                        
+
 
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
@@ -462,11 +496,13 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Sleeve" data-price="1499" data-image="image/f3.jpg"
-                                    class="default-btn border-radius-5">Add to cart </button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Sleeve', 1499, 'image/f3.jpg')">Add to cart
+                                </button>
                             </div>
                             <button type="button" dataa-name="Sleeve" dataa-price="1499" dataa-image="image/f3.jpg"
                                 class="js-wishlist-btn wishlist-btn btn border-radius-5">
-                            
+
 
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
@@ -492,11 +528,13 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Wrap" data-price="3499" data-image="image/f4.jpg"
-                                    class="default-btn border-radius-5">Add to cart</button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Wrap', 3499, 'image/f6.jpg')">Add to
+                                    cart</button>
                             </div>
                             <button type="button" dataa-name="Wrap" dataa-price="3499" dataa-image="image/f4.jpg"
                                 class="js-wishlist-btn wishlist-btn btn border-radius-5">
-                            
+
 
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
@@ -522,11 +560,13 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="shirts" data-price="1699" data-image="image/f5.jpg"
-                                    class="default-btn border-radius-5">Add to cart</button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'shirts', 1699, 'image/f5.jpg')">Add to
+                                    cart</button>
                             </div>
                             <button type="button" dataa-name="shirts" dataa-price="1699" dataa-image="image/f5.jpg"
                                 class="js-wishlist-btn wishlist-btn btn border-radius-5">
-                            
+
 
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
@@ -552,11 +592,13 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Casual" data-price="2999" data-image="image/f6.jpg"
-                                    class="default-btn border-radius-5">Add to cart </button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Casual', 2999, 'image/f6.jpg')">Add to cart
+                                </button>
                             </div>
                             <button type="button" dataa-name="Casual" dataa-price="2999" dataa-image="image/f6.jpg"
                                 class="js-wishlist-btn wishlist-btn btn border-radius-5">
-                                
+
 
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
@@ -583,11 +625,13 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Babydoll" data-price="1199" data-image="image/f7.jpg"
-                                    class="default-btn border-radius-5">Add to cart</button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Babydoll', 1199, 'image/f7.jpg')">Add to
+                                    cart</button>
                             </div>
                             <button type="button" dataa-name="Babydoll" dataa-price="1199" dataa-image="image/f7.jpg"
                                 class="js-wishlist-btn wishlist-btn btn border-radius-5">
-                            
+
 
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
@@ -614,11 +658,13 @@
                             <hr>
                             <div class="featured-content-list">
                                 <button type="button" data-name="Top" data-price="1399" data-image="image/f8.jpg"
-                                    class="default-btn border-radius-5">Add to cart </button>
+                                    class="default-btn border-radius-5"
+                                    onclick="redirectToProductPage(1, 'Top', 1399, 'image/f8.jpg')">Add to cart
+                                </button>
                             </div>
                             <button type="button" dataa-name="Top" dataa-price="1399" dataa-image="image/f8.jpg"
                                 class="js-wishlist-btn wishlist-btn btn border-radius-5">
-                            
+
 
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
@@ -716,7 +762,7 @@
         </div>
     </footer>
 
-    <div  class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -762,7 +808,7 @@
         </div>
 
         </main>
-        
+
         <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -776,5 +822,19 @@
         <script src="form.js"></script>
 
 
+        <script>
+            function redirectToProductPage(productId) {
+                window.location.href = `productPage.html?id=${productId}`;
+            }
+
+            function redirectToProductPage(productId, productName, productPrice, productImage) {
+                const queryString = `id=${productId}&name=${encodeURIComponent(productName)}&price=${productPrice}&image=${encodeURIComponent(productImage)}`;
+                window.location.href = `productPage.html?${queryString}`;
+            }
+        </script>
+
+
+
 </body>
+
 </html>

@@ -215,3 +215,23 @@ function cartPopupActions() {
 displayCart();
 
 
+document.querySelector('.cart-badge-btn').addEventListener('click', (event) => {
+  event.preventDefault();
+});
+
+
+
+// productpage //
+
+
+function showProductDetails(name, description, price) {
+  // Create a dynamic product page
+  const productPage = `
+      <h1>${name}</h1>
+      <p>${description}</p>
+      <p>Price: ${price}</p>
+  `;
+
+  // Update the product page content
+  document.body.innerHTML = productPage;
+}
